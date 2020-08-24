@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>taskcafe</Name>
+  <Repository>taskcafe/taskcafe</Repository>
+  <Registry>https://hub.docker.com/r/taskcafe/taskcafe/</Registry>
+  <Network>taskcafe</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/taskcafe/taskcafe/</Support>
+  <Project/>
+  <Overview>An open source project management tool    Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1598258281</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>An open source project management tool    Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>taskcafe</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3333</HostPort>
+        <ContainerPort>3333</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>postgres-taskcafe</Value>
+      <Name>TASKCAFE_DATABASE_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>TASKCAFE_MIGRATE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Web" Target="3333" Default="" Mode="tcp" Description="Container Port: 3333" Type="Port" Display="always" Required="false" Mask="false">3333</Config>
+  <Config Name="TASKCAFE_DATABASE_HOST" Target="TASKCAFE_DATABASE_HOST" Default="" Mode="" Description="Container Variable: TASKCAFE_DATABASE_HOST" Type="Variable" Display="always" Required="false" Mask="false">postgres-taskcafe</Config>
+  <Config Name="TASKCAFE_MIGRATE" Target="TASKCAFE_MIGRATE" Default="" Mode="" Description="Container Variable: TASKCAFE_MIGRATE" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
